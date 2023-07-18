@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+
+    font-size: 30px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+
+    background: url("/intro.jpg")center
+    no-repeat;
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+li {
+    font-size: 50px;
+    width: 280px;
+    height: 90px;
+    text-align: center;
+}
+input {
+    visibility:hidden;
+    margin: 0;
+    padding: 0;
+}
+
+input:checked + label {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+label:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.intro__inner {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+textarea {
+    width: 100%;
+    height: 350px;
+    padding: 30px;
+    background: none;
+    border-radius: 30px;
+    font-size: 20px;
+    resize: none;
+    border: 3px solid;
+    transition: 1s;
+}
+
+textarea:hover {
+    background:  rgba(14, 49, 71, 0.5); 
+}
+
+.con__board {
+    display: block;
+}
+
+.intro {
+    width: 100%;
+}
+
+.style {
+    font-size: 150px;
+    text-transform: uppercase;
+    
+}
+
+.style__link {
+    display: inline-block;
+    vertical-align: auto;
+    margin: 0 15px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color .2s linear;
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+    cursor: pointer;
+}
+
+.style__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: rgb(119, 119, 162);
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+   transition: 1s;
+}
+
+.style__link:hover {
+    color: rgb(119, 119, 162);
+}
+
+.style__link:hover:after {
+   opacity: 1;
+}
+
+.btn {
+    display: block;
+    background: none;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn:after{
+    position: absolute;
+    content: "RUN";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(14,49,71);
+    transition: all .35s;
+    z-index: 1;
+  }
+
+.h4 {
+    color: #000;
+    z-index: 10;
+}
+
+.intro__inner button:hover {
+    color: #fff;
+}
+
+.btn:hover{
+    color: #fff;
+  }
+  
+.btn:hover:after{
+    width: 100%;
+  }
+
+.output {
+    margin: 30px 100px 0 100px;
+    padding: 40px 100px 0 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgb(0, 0, 0);
+    height: 600px;
+    color: rgb(253, 253, 253);
+    border-radius: 30px;
+    font-size: 15px;
+    overflow-y: auto;
+}
+.textout {
+    background-color: rgba(3, 29, 48, 0.3);
+    border: 3px solid rgb(0, 0, 0);
+    height: 600px;
+    color: #fff;
+}
+
+.container__2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 250px;
+    font-size: 100px;
+
+}
+
+.intro__back {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-size: 70px;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+}
+
+.btn__2 {
+    font-family: 'Poiret One', cursive;
+    border-radius: 10px;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    border: 4px solid #333;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.btn__2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #fff;
+}
+
+.error_out {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+    label {
+      font-size: 40px;
+
+    }
+    textarea {
+        height: 250px;
+        margin-top: 20PX;
+       width: 100%;
+        padding: 30px;
+        border-radius: 30px;
+        font-size: 15px;
+        resize: none;
+        border: 2px solid;
+    }
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 50px 0;
+        } 
+    li {
+        font-size: 40px;
+        width: 200px;
+        height: 90px;
+        text-align: center;
+    }
+    .output {
+        margin: 30px 50px 0 50px;
+        padding: 40px 50 0 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 3px solid rgb(0, 0, 0);
+        height: 300px;
+        color: rgb(253, 253, 253);
+        border-radius: 30px;
+        font-size: 15px;
+        overflow-y: auto;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .bill__board {
+        margin: 0 auto;
+    }
+    .btn {
+        font-size: 20px;
+        width: 100px;
+        height: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    label {
+      font-size: 20px;
+
+    }
+    textarea {
+        height: 150px;
+        padding: 30px;
+        border-radius: 30px;
+        font-size: 15px;
+        resize: none;
+        border: 2px solid;
+    }
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 50px 0;
+        } 
+    li {
+        font-size: 25px;
+        width: 125px;
+        height: 90px;
+        text-align: center;
+    }
+    .output {
+        margin: 30px 50px 0 50px;
+        padding: 40px 50 0 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 3px solid rgb(0, 0, 0);
+        height: 150px;
+        color: rgb(253, 253, 253);
+        border-radius: 30px;
+        font-size: 15px;
+        overflow-y: auto;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .bill__board {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .btn {
+        font-size: 18px;
+        width: 100px;
+        height: 40px;
+    }
+}

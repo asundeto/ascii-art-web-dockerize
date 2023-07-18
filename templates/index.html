@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100;1,700&display=swap" rel="stylesheet">    
+    <title>Document</title>
+</head>
+<body>
+    <div class="back" style="background: url(/templates/intro.jpg) center no-repeat;">
+            <header class="header">
+                <form action="/ascii-art" method="POST">
+                    <div class="intro">
+                        <div class="container">
+                            <h1>ASCII-ART-WEB</h1>
+                        </div>
+                    </div>
+                        <div class="container">
+                            <div class="header__inner">
+                                    <ul>
+                                        <li class="radio__btn">
+                                            <input type='radio' value='standard' name="format" id='radio1'/>
+                                            <label style="padding: 20px;" for='radio1'>Standard</label>
+                                        </li>
+                                        <li class="radio__btn">
+                                            <input class="radio__btn" type='radio' value='shadow' name="format"  id='radio2'/>
+                                            <label style="padding: 20px;" for='radio2'>Shadow</label>
+                                        </li>
+                                        <li class="radio__btn">
+                                            <input class="radio__btn" type='radio' value='thinkertoy' name="format"  id='radio3'/>
+                                            <label style="padding: 20px;" for='radio3'>Thinkertoy</label>
+                                        </li>
+                                    </ul>
+                            </div> 
+                        </div>
+                        <div class="container con__board">
+                            <div class="bill__board">
+                                <textarea name="text"></textarea>
+                            </div>
+                            <div class="intro__inner">
+                                <button type="submit" class="btn"></button>
+                            </div>
+                        </div>
+                        <div class="output"><pre>{{.}}</pre>
+                </form>
+            </header>
+    </div>
+</body>
+</html>
